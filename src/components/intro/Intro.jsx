@@ -1,9 +1,14 @@
 import React from 'react'
 import './intro.css'
 import me from '../../img/Web-development-02.png'
+import { useContext } from 'react';
+import { ThemeContext } from '../../context';
 
 const Intro = () => {
-  console.log(me)
+  
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="m">
       <div className="m-left">
@@ -27,7 +32,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="m-right">
-        <div className="m-bg"></div>
+        <div style={{backgroundColor: darkMode && "crimson"}} className="m-bg"></div>
         <img src={me} alt="" className='m-img'/>
       </div>
     </div>

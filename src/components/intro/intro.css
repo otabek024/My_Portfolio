@@ -59,7 +59,7 @@
   height: 50px;
   font-size: 30px;
   font-weight: bold;
-  color: darkcyan;
+  color: crimson;
   display: flex;
   align-items: center;
 
@@ -80,4 +80,24 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media screen and (max-width: 480px){
+  .m{
+    flex-direction: column;
+  }
+  .m-name{
+    font-size: 30px;
+  }
+  .m-left-wrapper{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+  .m-desc{
+    display: none;
+  }
+  
 }

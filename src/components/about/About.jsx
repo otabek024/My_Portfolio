@@ -1,12 +1,17 @@
 import React from 'react'
 import './about.css'
 import myPhoto from '../../img/IMG_1593.JPG'
+import { useContext } from 'react';
+import { ThemeContext } from '../../context';
+
 
 const About = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className='a'>
       <div className="a-left">
-        <div className="a-card bg"></div>
+        <div style={{backgroundColor: darkMode && "crimson"}} className="a-card bg"></div>
         <div className="a-card">
           <img 
             src={myPhoto} 
@@ -18,7 +23,7 @@ const About = () => {
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
         <p className="a-sub">
-          I am Web Developer with high experience and like coding all the time. 
+          I am Web Developer with high experience and like coding on a daily basis. 
         </p>
         <p className="a-desc">
         Coding and programming careers have great earning potential and future. It gives 
