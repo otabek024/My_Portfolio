@@ -28,7 +28,12 @@ const Intro = () => {
             specializing in creating stylish, modern websites, web 
             services and online stores.
           </p>
-
+          <div className="icons-box">
+            <a href="https://t.me/abdurakhmonov99"><i className="fab fa-telegram"></i></a>
+            <a href="https://github.com/otabek024"><i className="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/channel/UCPPIjmkbaopLMucC2fMs4fg"><i className="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/otabek-abdurahmonov-46772b213/"><i className="fab fa-linkedin"></i></a>
+          </div>
         </div>
       </div>
       <div className="m-right">

@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  text-align: center;
 }
 
 .m-intro{
@@ -39,6 +40,7 @@
 }
 
 .m-title-wrapper{
+  text-align: center;
   height: 100%;
   animation: move 10s ease-in-out infinite alternate;
 }
@@ -57,12 +59,9 @@
 
 .m-title-item{
   height: 50px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   color: crimson;
-  display: flex;
-  align-items: center;
-
 }
 
 .m-img{
@@ -73,13 +72,53 @@
 }
 
 .m-bg{
-  clip-path: polygon(100% 0%, 100% 52%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
   background-color: #333;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.icons-box{
+  display: flex;
+  gap: 1.7rem;
+  font-size: 1.7rem;
+  justify-content: center;
+}
+
+.fa-telegram{
+  color: dodgerblue;
+}
+.fa-telegram:hover{
+  opacity: 50%;
+  border: none;
+  outline: none;
+}
+.fa-youtube{
+  color: crimson;
+}
+.fa-youtube:hover{
+  opacity: 50%;
+  border: none;
+  outline: none;
+}
+.fa-linkedin{
+  color: #0072b1;
+}
+.fa-linkedin:hover{
+  opacity: 50%;
+  border: none;
+  outline: none;
+}
+.fa-github{
+  color: gray;
+}
+.fa-github:hover{
+  opacity: 50%;
+  border: none;
+  outline: none;
 }
 
 @media screen and (max-width: 480px){
@@ -99,5 +138,13 @@
   .m-desc{
     display: none;
   }
+  .icons-box{
+    margin-top: 40px;
+  }
+
+  .m-bg{
+    clip-path: circle(50% at 50% 50%);
+  }
+  
   
 }
