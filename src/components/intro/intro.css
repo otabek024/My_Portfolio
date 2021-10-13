@@ -133,18 +133,24 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100%;
+    height: 90%;
+    margin-top: 25px;
   }
   .m-desc{
     display: none;
   }
   .icons-box{
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .m-bg{
-    clip-path: circle(50% at 50% 50%);
+    clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
   }
   
+  .m-img{
+    width: 90%;
+    object-fit: cover;
+    position: absolute;
+  }
   
 }
