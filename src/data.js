@@ -9,7 +9,7 @@ export const products = [
   {
     id: 1,
     img: masjid,
-    link: 'https://masjid-ashrafia.netlify.app/',
+    link: 'https://inha-masjid.netlify.app/',
   },
   {
     id: 2,

@@ -20,7 +20,7 @@ const Intro = () => {
               <div className="m-title-item">Web Developer</div>
               <div className="m-title-item">Youtuber</div>
               <div className="m-title-item">Content Creator</div>
-              <div className="m-title-item">UI/UX Designer</div>
+              <div className="m-title-item">Freelancer</div>
             </div>
           </div>
           <p className="m-desc">
